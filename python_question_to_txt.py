@@ -16,13 +16,14 @@ def writelines():
         outfile.write(line)
         
         # Prompt the user to determine if there are more lines to enter
-        
+        choice = input('Are there more lines y/n? ')
         
         # If the user chooses 'n', exit the loop
-        
+        if choice == 'n':
+            break
     
     # Close the file
-    
+    outfile.close()
 
 # Call the writelines function to execute the code
-
+writelines()
